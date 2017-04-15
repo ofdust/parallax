@@ -32,11 +32,12 @@ html {
   padding: 25vh 10%;
   min-height: 100vh;
   width: 100vw;
-  border-bottom: 3px solid #fff;
+  //border-bottom: 3px solid #fff;
   transform-style: inherit;
   background: 50% 50% / cover;
   -webkit-transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
+  overflow: none;
 }
 
 .group:before {
@@ -85,10 +86,10 @@ html {
 
 /* slide under groups 1 and 3 */
 #group2 {
-  z-index: 6;
+  z-index: 7;
 }
 
-#group2 {
+#group2, #group3, #group4 {
 	.base {
   		background: url('../img/background.png') 50% 50% no-repeat;
   		background-size: cover;
@@ -100,23 +101,54 @@ html {
   	}
   	.base3 {
   		background: url('../img/starslarge.png') 50% 50% no-repeat;
+  		background-size: cover;
   	}
 }
 
 
 /* slide over group 2*/
 #group3 {
-  z-index: 7; 
+  z-index: 6; 
 }
 
 #group3 {
-	.base {
-  		background: url('http://placehold.it/960x450/ff0000') 50% 50% no-repeat;
-  		background-size: cover;
+	.base4 {
+  		background: url('../img/neptune.png') 50% 50% no-repeat;
+  		//background-size: cover;
+  		-webkit-transform: translateZ(-200px) scale(.9);
+  		transform: translateZ(-200px) scale(.9);
+  		z-index: 7;
+  		left:-100%;
 	}
+	.base5 {
+		background: url('../img/uranus.png') 50% 50% no-repeat;
+		//background-size: cover;
+		-webkit-transform: translateZ(-300px) scale(1);
+  		transform: translateZ(-300px) scale(1);
+  		z-index: 6;
+  		left:-40%;
+	}
+	figure {
+		//left:-80%;
+		//transform: translateZ(-300px) scale(.9);
+	}
+	border-bottom:1px solid #fff;
+}
+
+#group4 {
+	z-index: 7;
 }
 
 /*content styles*/
+
+figure {
+    width: 100%;
+    left: 80%;
+    bottom: 0%;
+    transform: translateZ(-2000px) scale(2);
+    position: absolute;
+    z-index: 999;
+}
 
 .title {
   text-align: center;
@@ -154,14 +186,7 @@ p {
   z-index: 999;
 }
 
-figure {
-    width: 100%;
-    left: 0%;
-    bottom: 0%;
-    transform: translateZ(-200px) scale(.9);
-    position: absolute;
-    z-index: 999;
-}
+
 
 img {
   width: 100%;
