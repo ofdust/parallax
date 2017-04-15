@@ -132,16 +132,16 @@ html {
 	.base4 {
   		background: url('../img/neptune.png') 50% 50% no-repeat;
   		//background-size: cover;
-  		-webkit-transform: translateZ(-200px) scale(.9);
-  		transform: translateZ(-200px) scale(.9);
+  		-webkit-transform: translateZ(-300px) scale(1.2);
+  		transform: translateZ(-300px) scale(1.2);
   		z-index: 7;
   		left:-100%;
 	}
 	.base5 {
 		background: url('../img/uranus.png') 50% 50% no-repeat;
 		//background-size: cover;
-		-webkit-transform: translateZ(-300px) scale(1);
-  		transform: translateZ(-300px) scale(.7);
+		-webkit-transform: translateZ(-200px) scale(.7);
+  		transform: translateZ(-200px) scale(.7);
   		z-index: 6;
   		left:-40%;
 	}
