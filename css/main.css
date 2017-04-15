@@ -735,181 +735,11 @@ html {
   -webkit-transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
 }
-
-/* line 44, ../scss/main.scss */
-.group:before {
-  content: " ";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: 50% 50% / cover;
-}
-
-/*base styles*/
-/* line 56, ../scss/main.scss */
-.base {
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0) scale(1);
-  z-index: 1;
-}
-
-/* line 62, ../scss/main.scss */
-.base2 {
-  -webkit-transform: translateZ(-50px) scale(1);
-  transform: translateZ(-50px) scale(1);
-  z-index: 2;
-}
-
-/* line 68, ../scss/main.scss */
-.base3 {
-  -webkit-transform: translateZ(-120px) scale(1.4);
-  transform: translateZ(-120px) scale(1.4);
-  z-index: 3;
-}
-
-/*group styles*/
-/* slide over group 2 */
-/* line 78, ../scss/main.scss */
-#group1 {
-  z-index: 8;
-}
-
-/* line 83, ../scss/main.scss */
-#group1 .base {
-  background: #000000;
-}
-
-/* slide under groups 1 and 3 */
-/* line 89, ../scss/main.scss */
-#group2 {
-  z-index: 7;
-}
-
-/* line 94, ../scss/main.scss */
-#group2 .base, #group3 .base, #group4 .base, #group5 .base {
-  background: url("../img/background.png") 50% 50% no-repeat;
-  background-size: cover;
-}
-/* line 98, ../scss/main.scss */
-#group2 .base2, #group3 .base2, #group4 .base2, #group5 .base2 {
-  background: url("../img/starssmall.png") 50% 50% no-repeat;
-  background-size: cover;
-  opacity: 1;
-}
-/* line 103, ../scss/main.scss */
-#group2 .base3, #group3 .base3, #group4 .base3, #group5 .base3 {
-  background: url("../img/starslarge.png") 50% 50% no-repeat;
-  background-size: cover;
-}
-
-/* slide over group 2*/
-/* line 111, ../scss/main.scss */
-#group3 {
-  z-index: 6;
-}
-
-/* line 116, ../scss/main.scss */
-#group3 .base4 {
-  background: url("../img/neptune.png") 50% 50% no-repeat;
-  -webkit-transform: translateZ(-200px) scale(0.9);
-  transform: translateZ(-200px) scale(0.9);
-  z-index: 7;
-  left: -100%;
-}
-/* line 124, ../scss/main.scss */
-#group3 .base5 {
-  background: url("../img/uranus.png") 50% 50% no-repeat;
-  -webkit-transform: translateZ(-300px) scale(1);
-  transform: translateZ(-300px) scale(0.7);
-  z-index: 6;
-  left: -40%;
-}
-
-/* line 139, ../scss/main.scss */
-#group4 {
-  z-index: 7;
-}
-/* line 141, ../scss/main.scss */
-#group4 .base4 {
-  background: url("../img/jupiter.png") 50% 50% no-repeat;
-  -webkit-transform: translateZ(-300px) scale(1.4);
-  transform: translateZ(-300px) scale(1.4);
-  z-index: 7;
-  left: -120%;
-}
-/* line 149, ../scss/main.scss */
-#group4 .base5 {
-  background: url("../img/saturn.png") 50% 50% no-repeat;
-  -webkit-transform: translateZ(-100px) scale(1.1);
-  transform: translateZ(-100px) scale(1.1);
-  z-index: 6;
-  left: 0%;
-}
-/* line 157, ../scss/main.scss */
-#group4 .base6 {
-  background: url("../img/plutosmile.png") 50% 50% no-repeat;
-  -webkit-transform: translateZ(-100px) scale(1);
-  transform: translateZ(-100px) scale(1);
-  z-index: 6;
-  left: 50%;
-}
-
-/* line 171, ../scss/main.scss */
-#group5 {
-  z-index: 8;
-}
-/* line 173, ../scss/main.scss */
-#group5 .base4 {
-  background: url("../img/plutoheart.png") 50% 50% no-repeat;
-  -webkit-transform: translateZ(-100px) scale(1);
-  transform: translateZ(-100px) scale(1);
-  z-index: 9;
-}
-/* line 179, ../scss/main.scss */
-#group5 p {
-  font-size: 2em;
-  width: auto;
-}
-
-/*content styles*/
-/* line 187, ../scss/main.scss */
-figure {
-  width: 100%;
-  left: 80%;
-  bottom: 0%;
-  transform: translateZ(-2000px) scale(2);
-  position: absolute;
-  z-index: 999;
-}
-
-/* line 196, ../scss/main.scss */
-.title {
-  text-align: center;
-  position: absolute;
-  left: 40%;
-  top: 30%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-/* line 205, ../scss/main.scss */
-h1 {
-  color: white;
-  font-size: 80px;
-  font-family: serif;
-  text-align: center;
-  position: absolute;
-  z-index: 999;
-  width: 100%;
-}
-
-/* line 216, ../scss/main.scss */
-p {
+/* line 42, ../scss/main.scss */
+.group p {
   font-size: 20px;
   color: white;
-  font-family: sans-serif;
+  font-family: 'Roboto Slab', serif;
   line-height: 40px;
   padding: 20px;
   max-width: 40%;
@@ -922,7 +752,198 @@ p {
   z-index: 999;
 }
 
-/* line 235, ../scss/main.scss */
+/* line 60, ../scss/main.scss */
+.group:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: 50% 50% / cover;
+}
+
+/*base styles*/
+/* line 72, ../scss/main.scss */
+.base {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0) scale(1);
+  z-index: 1;
+}
+
+/* line 78, ../scss/main.scss */
+.base2 {
+  -webkit-transform: translateZ(-50px) scale(1);
+  transform: translateZ(-50px) scale(1);
+  z-index: 2;
+}
+
+/* line 84, ../scss/main.scss */
+.base3 {
+  -webkit-transform: translateZ(-120px) scale(1.4);
+  transform: translateZ(-120px) scale(1.4);
+  z-index: 3;
+}
+
+/*group styles*/
+/* slide over group 2 */
+/* line 94, ../scss/main.scss */
+#group1 {
+  z-index: 8;
+}
+
+/* line 99, ../scss/main.scss */
+#group1 .base {
+  background: #000000;
+}
+
+/* slide under groups 1 and 3 */
+/* line 105, ../scss/main.scss */
+#group2 {
+  z-index: 7;
+}
+
+/* line 110, ../scss/main.scss */
+#group2 .base, #group3 .base, #group4 .base, #group5 .base {
+  background: url("../img/background.png") 50% 50% no-repeat;
+  background-size: cover;
+}
+/* line 114, ../scss/main.scss */
+#group2 .base2, #group3 .base2, #group4 .base2, #group5 .base2 {
+  background: url("../img/starssmall.png") 50% 50% no-repeat;
+  background-size: cover;
+  opacity: 1;
+}
+/* line 119, ../scss/main.scss */
+#group2 .base3, #group3 .base3, #group4 .base3, #group5 .base3 {
+  background: url("../img/starslarge.png") 50% 50% no-repeat;
+  background-size: cover;
+}
+
+/* slide over group 2*/
+/* line 127, ../scss/main.scss */
+#group3 {
+  z-index: 6;
+}
+
+/* line 132, ../scss/main.scss */
+#group3 .base4 {
+  background: url("../img/neptune.png") 50% 50% no-repeat;
+  -webkit-transform: translateZ(-200px) scale(0.9);
+  transform: translateZ(-200px) scale(0.9);
+  z-index: 7;
+  left: -100%;
+}
+/* line 140, ../scss/main.scss */
+#group3 .base5 {
+  background: url("../img/uranus.png") 50% 50% no-repeat;
+  -webkit-transform: translateZ(-300px) scale(1);
+  transform: translateZ(-300px) scale(0.7);
+  z-index: 6;
+  left: -40%;
+}
+
+/* line 155, ../scss/main.scss */
+#group4 {
+  z-index: 7;
+}
+/* line 157, ../scss/main.scss */
+#group4 .base4 {
+  background: url("../img/jupiter.png") 50% 50% no-repeat;
+  -webkit-transform: translateZ(-300px) scale(1.4);
+  transform: translateZ(-300px) scale(1.4);
+  z-index: 7;
+  left: -120%;
+}
+/* line 165, ../scss/main.scss */
+#group4 .base5 {
+  background: url("../img/saturn.png") 50% 50% no-repeat;
+  -webkit-transform: translateZ(-100px) scale(1.1);
+  transform: translateZ(-100px) scale(1.1);
+  z-index: 6;
+  left: 0%;
+}
+/* line 173, ../scss/main.scss */
+#group4 .base6 {
+  background: url("../img/plutosmile.png") 50% 50% no-repeat;
+  -webkit-transform: translateZ(-100px) scale(1);
+  transform: translateZ(-100px) scale(1);
+  z-index: 6;
+  left: 50%;
+}
+
+/* line 187, ../scss/main.scss */
+#group5 {
+  z-index: 8;
+}
+/* line 189, ../scss/main.scss */
+#group5 .base4 {
+  background: url("../img/plutoheart.png") 50% 50% no-repeat;
+  -webkit-transform: translateZ(-100px) scale(1);
+  transform: translateZ(-100px) scale(1);
+  z-index: 9;
+}
+/* line 195, ../scss/main.scss */
+#group5 p {
+  font-size: 2em;
+  width: auto;
+}
+
+/*content styles*/
+/* line 203, ../scss/main.scss */
+figure {
+  width: 100%;
+  left: 80%;
+  bottom: 0%;
+  transform: translateZ(-2000px) scale(2);
+  position: absolute;
+  z-index: 999;
+}
+
+/* line 212, ../scss/main.scss */
+.title {
+  text-align: center;
+  position: absolute;
+  left: 40%;
+  top: 30%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* line 221, ../scss/main.scss */
+h1 {
+  color: white;
+  font-size: 2.5em;
+  font-family: 'Dosis', sans-serif;
+  letter-spacing: .4em;
+  text-align: center;
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+}
+
+/* line 237, ../scss/main.scss */
 img {
   width: 100%;
+}
+
+/* line 241, ../scss/main.scss */
+footer {
+  z-index: 10;
+  width: 100%;
+  height: 200px;
+  bottom: 0px;
+  position: relative;
+}
+/* line 247, ../scss/main.scss */
+footer p {
+  font-size: 1em;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 255, ../scss/main.scss */
+p {
+  font-family: 'Roboto Slab', serif;
 }

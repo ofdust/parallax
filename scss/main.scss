@@ -39,6 +39,22 @@ html {
   -webkit-transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
   //overflow: none;
+	  p {
+	  font-size: 20px;
+	  color: white;
+	  font-family: 'Roboto Slab', serif;
+	  line-height: 40px;
+	  padding: 20px;
+	  //width: 40%;
+	  max-width: 40%;
+	  left: 10%;
+	  bottom: 40%;
+	  background: rgba(0, 10, 10, 0.4);
+	  border-radius: 25px;
+	  transform: translateZ(100px) scale(0.6);
+	  position: absolute;
+	  z-index: 999;
+	}
 }
 
 .group:before {
@@ -204,8 +220,9 @@ figure {
 
 h1 {
   color: white;
-  font-size: 80px;
-  font-family: serif;
+  font-size: 2.5em;
+  font-family: 'Dosis', sans-serif;
+  letter-spacing: .4em;
   text-align: center;
   position: absolute;
   z-index: 999;
@@ -213,25 +230,28 @@ h1 {
   width: 100%;
 }
 
-p {
-  font-size: 20px;
-  color: white;
-  font-family: sans-serif;
-  line-height: 40px;
-  padding: 20px;
-  //width: 40%;
-  max-width: 40%;
-  left: 10%;
-  bottom: 40%;
-  background: rgba(0, 10, 10, 0.4);
-  border-radius: 25px;
-  transform: translateZ(100px) scale(0.6);
-  position: absolute;
-  z-index: 999;
-}
+
 
 
 
 img {
   width: 100%;
+}
+
+footer {
+	z-index: 10;
+	width: 100%;
+	height: 200px;
+	bottom: 0px;
+	position: relative;
+	p {
+		font-size: 1em;
+		color: white;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+p {
+	font-family: 'Roboto Slab', serif;
 }
